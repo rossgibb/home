@@ -1,0 +1,13 @@
+---
+- name: Update apt cache
+  apt: update_cache=yes cache_valid_time=360000
+
+- name: Install common packages
+  apt:
+    pkg: "{{ item }}"
+  with_items: common_apts
+
+- name: Update bashrc with alias
+  lineinfile:
+    dest: ~rg/.bashrc
+    line: alias str='strings -a'

@@ -1,0 +1,3 @@
+---
+- include: laptops.yml
+- include: analysis.yml

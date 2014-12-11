@@ -1,0 +1,6 @@
+---
+- hosts: laptops
+  sudo: true
+  roles:
+    - common
+    - laptop

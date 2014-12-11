@@ -1,0 +1,12 @@
+---
+ansible_ssh_user: sysmanager
+
+common_apts:
+  - vim
+  - python-dev
+  - okteta
+  - git
+  - p7zip-full
+  - wireshark
+  - gimp
+  - nasm
